@@ -1,0 +1,1202 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  </head>
+  <body class="overflow-x-hidden">
+   <header id="home" class="scroll-mt-24 bg-[#F7F5F0]">
+    <div class="fixed inset-x-0 top-0 z-50 bg-[#F7F5F0] shadow-sm">
+        <div class="mx-auto flex w-full max-w-7xl items-center justify-between px-10 py-4 sm:px-15 lg:px-10">
+            <a href="#home" class="text-2xl font-bold text-black" aria-label="Axis home">Axis</a>
+            <nav class="hidden lg:block" aria-label="Main navigation">
+                <ul class="flex items-center gap-8">
+                    <li><a href="#home" class="block text-gray-500 transition hover:text-black">Home</a></li>
+                    <li><a href="#about" class="block text-gray-500 transition hover:text-black">About</a></li>
+                    <li><a href="#services" class="block text-gray-500 transition hover:text-black">Services</a></li>
+                    <li><a href="#portfolio" class="block text-gray-500 transition hover:text-black">Portfolio</a></li>
+                    <li><a href="#team" class="block text-gray-500 transition hover:text-black">Team</a></li>
+                    <li><a href="#contact" class="block text-gray-500 transition hover:text-black">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="menuBtn" type="button" class="inline-flex h-11 w-11 items-center justify-center rounded-lg text-2xl text-black transition hover:bg-black/5 focus:outline-none focus:ring-2 focus:ring-black lg:hidden" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">
+                <i class="fa-solid fa-bars hamburger" aria-hidden="true"></i>
+            </button>
+        </div>
+    </div>
+    <div id="mobileMenu" class="fixed inset-x-0 top-[64px] z-40 hidden max-h-[calc(100vh-64px)] overflow-y-auto border-t border-gray-200 bg-[#F7F5F0] px-5 py-6 shadow-lg sm:px-8 lg:hidden">
+        <nav aria-label="Mobile navigation">
+            <ul class="flex flex-col gap-5">
+                <li><a href="#home" class="block text-gray-500 transition hover:text-black">Home</a></li>
+                <li><a href="#about" class="block text-gray-500 transition hover:text-black">About</a></li>
+                <li><a href="#services" class="block text-gray-500 transition hover:text-black">Services</a></li>
+                <li><a href="#portfolio" class="block text-gray-500 transition hover:text-black">Portfolio</a></li>
+                <li><a href="#team" class="block text-gray-500 transition hover:text-black">Team</a></li>
+                <li><a href="#contact" class="block text-gray-500 transition hover:text-black">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section class="bg-[#F7F5F0] px-5 pb-14 pt-28 sm:px-8 sm:pb-16 sm:pt-28 lg:px-30 lg:pb-20 lg:pt-32">
+        <div class="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-2">
+            <div>
+                <h3 class="max-w-xl text-4xl font-bold leading-tight text-black sm:text-5xl">Transform Your Business Vision Into Reality</h3>
+
+                <p class="mt-5 max-w-lg text-base leading-7 text-gray-500 sm:mt-6 sm:text-lg sm:leading-8">
+                    We help businesses turn ideas into meaningful digital
+                    experiences through strategy, design, development, and
+                    creative solutions built around their goals.
+                </p>
+
+                <div class="mt-8 flex flex-wrap items-center gap-4">
+
+                    <a href="#contact"class="rounded-full bg-black px-6 py-3 text-sm font-medium text-white transition hover:bg-gray-800 sm:px-7"> Get Started </a>
+
+                    <a href="#portfolio"class="rounded-full border border-gray-300 px-6 py-3 text-sm font-medium text-black transition hover:bg-black hover:text-white sm:px-7">Explore Our Work</a>
+                </div>
+
+                <div class="mt-6 flex flex-wrap gap-6 pt-8 sm:mt-12 sm:gap-10">
+
+                    <div>
+                        <h4 class="text-lg font-bold text-black sm:text-xl">Strategy</h4>
+                        <p class="mt-1 text-sm text-gray-500">Clear direction</p>
+                    </div>
+
+
+                    <div>
+                        <h4 class="text-lg font-bold text-black sm:text-xl">Design</h4>
+                        <p class="mt-1 text-sm text-gray-500">Thoughtful experiences</p>
+                    </div>
+
+
+                    <div>
+                        <h4 class="text-lg font-bold text-black sm:text-xl">Development</h4>
+                        <p class="mt-1 text-sm text-gray-500">Built to perform</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="relative mx-auto mt-4 w-full max-w-2xl lg:mx-0 lg:mt-0 lg:max-w-none lg:-mt-16">
+                <img
+                     src="images/meeting.jpg"
+                    alt="Axis team working together"
+                     class="h-[400px] w-full rounded-2xl object-cover sm:h-[500px] md:mx-auto md:w-[100%] lg:mx-0 lg:w-full lg:h-[550px]">
+
+                <div class="absolute bottom-5 left-4 rounded-xl bg-white p-4 shadow-lg sm:bottom-6 sm:left-6 sm:p-5">
+                    <h3 class="text-sm font-medium text-gray-500">Our Approach</h3>
+
+                    <h5 class="mt-1 text-xl font-bold text-black sm:text-2xl">Strategy to Solution</h5>
+
+                    <p class="mt-1 text-sm text-gray-500">Ideas shaped into results.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+
+<main>
+   <section id="about" class="scroll-mt-24 bg-white px-5 pb-16 pt-16 sm:px-8 sm:pb-20 sm:pt-20 lg:px-30 lg:pb-24">
+
+    <div class="mx-auto max-w-3xl text-center">
+        <h4 class="text-sm font-semibold tracking-[0.2em] text-black">ABOUT</h4>
+        <div class="mx-auto mt-1 h-[1px] w-10 bg-black"></div>
+        <h3 class="mt-3 text-4xl font-bold text-black">About Us</h3>
+        <p class="mt-5 leading-7 text-gray-500">
+            At Axis, we help businesses turn ideas into meaningful digital
+            experiences through strategy, design, development, and thoughtful
+            solutions built around their goals.
+        </p>
+    </div>
+
+    <div class="mx-auto mt-10 grid max-w-7xl items-center gap-10 sm:mt-16 sm:gap-14 lg:grid-cols-2">
+        <div>
+            <h2 class="text-2xl font-bold sm:text-3xl sm:text-4xl leading-tight text-black">Crafting Excellence Through Innovation and Dedication</h2>
+
+            <p class="mt-6 leading-8 text-gray-500">
+                We are a team of creative thinkers, strategists, and
+                developers committed to helping businesses build stronger
+                digital experiences and connect with their audiences.
+            </p>
+            <p class="mt-4 leading-8 text-gray-500">
+                From shaping an idea to bringing it to life, we combine
+                thoughtful strategy, creative design, and modern technology
+                to create solutions that are both practical and engaging.
+            </p>
+            <p class="mt-4 leading-8 text-gray-500">
+                We believe great work starts with understanding the people,
+                goals, and challenges behind every project. That is why we
+                work closely with our clients from the first idea to the
+                final result.
+            </p>
+
+            <div class="mt-10 grid grid-cols-3 gap-6 pt-8">
+                <div><h3 class="text-2xl font-bold sm:text-3xl text-black"> 15</h3>
+                    <p class="mt-2 text-xs font-medium tracking-wide text-gray-500">YEARS EXPERIENCE</p>
+                </div>
+
+                <div><h3 class="text-2xl font-bold sm:text-3xl text-black"> 850</h3>
+                    <p class="mt-2 text-xs font-medium tracking-wide text-gray-500">PROJECT COMPLETED</p>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold sm:text-3xl text-black">240</h3>
+                    <p class="mt-2 text-xs font-medium tracking-wide text-gray-500">HAPPY CLIENTS</p>
+                </div>
+            </div>
+
+            <a href="#"class="mt-10 inline-block rounded border px-7 py-3 text-sm font-medium text-black transition hover:bg-black hover:text-white">Meet Our Team </a>
+        </div>
+
+        <div class="relative">
+            <img src="images/3 peopl3.jpg"alt="Our team"class="h-[360px] w-full rounded-2xl object-cover sm:h-[450px] lg:h-[550px]">
+
+            <div class="absolute bottom-4 right-4 max-w-[calc(100%-2rem)] rounded-xl bg-white p-4 shadow-xl sm:bottom-6 sm:right-6 sm:max-w-xs sm:p-5">
+                <h3 class="text-lg font-bold text-black">Award Winning</h3>
+                <p class="mt-1 text-sm leading-6 text-gray-500">Recognized for delivering thoughtful digital solutions
+                    and creating meaningful experiences for our clients. </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <section id="services" class="scroll-mt-24 bg-[#F7F5F0] px-5 py-16 sm:px-8 sm:py-20 lg:px-30 lg:py-24">
+    <div class="mx-auto max-w-3xl text-center">
+        <h3 class="text-sm font-semibold tracking-[0.2em] text-black"> SERVICES</h3>
+        <div class="mx-auto mt-1 h-[1px] w-10 bg-black"></div>
+            <h2 class="mt-4 text-4xl font-bold text-black">What We Do Offer</h2>
+
+            <p class="mt-5 leading-7 text-gray-500">
+            We provide strategic, creative, and technology-driven solutions
+            that help businesses build stronger brands, improve their digital
+            presence, and achieve meaningful growth.
+            </p>
+        </div>
+         <div class="mx-auto mt-10 grid max-w-7xl gap-5 sm:mt-16 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
+
+         <div class="group relative overflow-hidden rounded-2xl bg-white p-6 transition duration-300 hover:-translate-y-2 hover:shadow-xl sm:p-8 before:absolute before:left-0 before:top-0 before:h-1 before:w-0 before:bg-black before:content-[''] before:transition-all before:duration-300 hover:before:w-full transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+
+          <div class="flex h-20 w-20 items-center justify-center rounded-full bg-black"><i class="fa-solid fa-chart-line text-4xl text-white"></i></div>
+            <h3 class="mt-6 text-xl font-bold text-black">Strategic Consulting</h3>
+            <p class="mt-4 leading-7 text-gray-500">
+                We help businesses identify opportunities, solve challenges,
+                and develop clear strategies that support long-term growth
+                and sustainable results.
+            </p>
+            <a href="#" class="mt-6 inline-block text-sm font-semibold text-black">Learn More → </a>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-2xl bg-white p-6 transition duration-300 hover:-translate-y-2 hover:shadow-xl sm:p-8 before:absolute before:left-0 before:top-0 before:h-1 before:w-0 before:bg-black before:content-[''] before:transition-all before:duration-300 hover:before:w-full transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+           <div class="flex h-20 w-20 items-center justify-center rounded-full bg-black"><i class="fa-solid fa-palette text-4xl text-white"></i>
+            </div>
+            <h3 class="mt-6 text-xl font-bold text-black">Creative Design</h3>
+            <p class="mt-4 leading-7 text-gray-500">
+                We create thoughtful and engaging visual experiences that
+                communicate your brand clearly and leave a lasting impression
+                on your audience.
+            </p>
+            <a href="#" class="mt-6 inline-block text-sm font-semibold text-black"> Learn More →</a>
+        </div>
+
+         <div class="group relative overflow-hidden rounded-2xl bg-white p-6 transition duration-300 hover:-translate-y-2 hover:shadow-xl sm:p-8 before:absolute before:left-0 before:top-0 before:h-1 before:w-0 before:bg-black before:content-[''] before:transition-all before:duration-300 hover:before:w-full transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+           <div class="flex h-20 w-20 items-center justify-center rounded-full bg-black"><i class="fa-solid fa-code text-4xl text-white"></i>
+            </div>
+            <h3 class="mt-6 text-xl font-bold text-black">Web Development </h3>
+            <p class="mt-4 leading-7 text-gray-500">
+                We build responsive, reliable, and user-focused websites
+                designed to give businesses a strong digital presence across
+                modern devices.
+            </p>
+            <a href="#" class="mt-6 inline-block text-sm font-semibold text-black"> Learn More →</a>
+        </div>
+
+         <div class="group relative overflow-hidden rounded-2xl bg-white p-6 transition duration-300 hover:-translate-y-2 hover:shadow-xl sm:p-8 before:absolute before:left-0 before:top-0 before:h-1 before:w-0 before:bg-black before:content-[''] before:transition-all before:duration-300 hover:before:w-full transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+           <div class="flex h-20 w-20 items-center justify-center rounded-full bg-black">
+             <i class="fa-solid fa-bullhorn text-4xl text-white"></i>
+           </div>
+            <h3 class="mt-6 text-xl font-bold text-black">Digital Marketing</h3>
+            <p class="mt-4 leading-7 text-gray-500">
+                We help brands reach the right audience through thoughtful
+                digital campaigns, stronger online positioning, and content
+                that supports business goals.
+            </p>
+            <a href="#" class="mt-6 inline-block text-sm font-semibold text-black">Learn More →</a>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-2xl bg-white p-6 transition duration-300 hover:-translate-y-2 hover:shadow-xl sm:p-8 before:absolute before:left-0 before:top-0 before:h-1 before:w-0 before:bg-black before:content-[''] before:transition-all before:duration-300 hover:before:w-full transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+           <div class="flex h-20 w-20 items-center justify-center rounded-full bg-black">
+             <i class="fa-solid fa-users text-4xl text-white"></i>
+            </div>
+            <h3 class="mt-6 text-xl font-bold text-black"> Team Development</h3>
+            <p class="mt-4 leading-7 text-gray-500">
+                We support teams with practical approaches to collaboration,
+                communication, and development that create a stronger and more
+                productive working environment.
+            </p>
+            <a href="#" class="mt-6 inline-block text-sm font-semibold text-black">Learn More →</a>
+        </div>
+
+         <div class="group relative overflow-hidden rounded-2xl bg-white p-6 transition duration-300 hover:-translate-y-2 hover:shadow-xl sm:p-8 before:absolute before:left-0 before:top-0 before:h-1 before:w-0 before:bg-black before:content-[''] before:transition-all before:duration-300 hover:before:w-full transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+           <div class="flex h-20 w-20 items-center justify-center rounded-full bg-black">
+             <i class="fa-solid fa-chart-simple text-4xl text-white"></i>
+           </div>
+            <h3 class="mt-6 text-xl font-bold text-black">Business Analytics </h3>
+            <p class="mt-4 leading-7 text-gray-500">
+                We turn business data into useful insights that help teams
+                understand performance, identify trends, and make more
+                informed decisions.
+            </p>
+            <a href="#" class="mt-6 inline-block text-sm font-semibold text-black">Learn More →</a>
+        </div>
+    </div>
+</section>
+
+<section class="scroll-mt-24 bg-white px-5 py-16 sm:px-8 sm:py-20 lg:px-30 lg:py-24">
+    <div class="mx-auto max-w-3xl text-center">
+        <h3 class="text-sm font-semibold tracking-[0.2em] text-black">WHY US</h3>
+
+        <div class="mx-auto mt-1 h-[1px] w-10 bg-black"></div>
+        <h2 class="mt-4 text-4xl font-bold text-black">Why Choose Us</h2>
+        <p class="mt-5 leading-7 text-gray-500">
+            We combine strategy, creativity, technology, and a collaborative
+            approach to create digital solutions that help businesses move
+            forward with confidence.
+        </p>
+    </div>
+
+    <div class="mx-auto mt-10 grid max-w-7xl items-center gap-10 sm:mt-16 sm:gap-12 lg:grid-cols-2">
+        <div class="lg:pr-4">
+            <h2 class="text-2xl font-bold sm:text-3xl text-black">Why Partner With Us</h2>
+            <p class="mt-5 leading-8 text-gray-500">
+                At Axis, we take the time to understand your business,
+                your audience, and your goals before creating a solution.
+                Our approach brings together thoughtful strategy, creative
+                thinking, and reliable technology to deliver work that makes
+                a real difference.
+            </p>
+        </div>
+
+        <div>
+            <img src="images/group.jpg" alt="Our team"class="h-[320px] w-full rounded-2xl object-cover sm:h-[400px] lg:h-[450px]">
+        </div>
+    </div>
+
+   <div class="grid gap-8 md:grid-cols-2 mt-16 lg:mt-20">
+    <div class="flex min-w-0 items-start gap-4 sm:gap-5">
+        <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-gray-100">
+            <i class="fa-regular fa-lightbulb text-2xl text-black"></i>
+        </div>
+        <div>
+            <h3 class="text-xl font-bold text-black">Creative Thinking</h3>
+            <p class="mt-2 leading-7 text-gray-500">
+                We approach every project with fresh ideas and thoughtful
+                solutions, helping businesses stand out while staying focused
+                on what matters to their audience.
+            </p>
+        </div>
+    </div>
+
+    <div class="flex min-w-0 items-start gap-4 sm:gap-5">
+        <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-gray-100">
+            <i class="fa-solid fa-award text-2xl text-black"></i>
+        </div>
+        <div>
+            <h3 class="text-xl font-bold text-black">Quality Driven</h3>
+            <p class="mt-2 leading-7 text-gray-500">
+                From strategy to execution, we pay attention to the details
+                that shape a strong final product and deliver solutions built
+                with purpose and consistency.
+            </p>
+        </div>
+    </div>
+
+    <div class="flex min-w-0 items-start gap-4 sm:gap-5">
+        <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-gray-100">
+            <i class="fa-solid fa-headset text-2xl text-black"></i>
+        </div>
+        <div>
+            <h3 class="text-xl font-bold text-black">Collaborative Approach</h3>
+            <p class="mt-2 leading-7 text-gray-500">
+                We work closely with our clients throughout every stage of a
+                project, keeping communication clear and making sure every
+                solution reflects their goals and vision.
+            </p>
+        </div>
+    </div>
+
+    <div class="flex min-w-0 items-start gap-4 sm:gap-5">
+        <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-gray-100">
+            <i class="fa-solid fa-chart-line text-2xl text-black"></i>
+        </div>
+
+        <div>
+            <h3 class="text-xl font-bold text-black">Results Focused</h3>
+            <p class="mt-2 leading-7 text-gray-500">
+                We focus on creating solutions that are not only visually
+                strong but also practical, purposeful, and capable of helping
+                your business achieve its goals.
+            </p>
+        </div>
+    </div>
+
+</div>
+</section>
+
+<section id="portfolio" class="scroll-mt-24 bg-[#F8F7F3] px-5 py-16 sm:px-8 sm:py-20 lg:px-30 lg:py-24">
+    <div class="mx-auto max-w-3xl text-center">
+        <h3 class="text-sm font-semibold tracking-[0.2em] text-black">PORTFOLIO</h3>
+        <div class="mx-auto mt-1 h-[1px] w-10 bg-black"></div>
+        <h2 class="mt-4 text-4xl font-bold text-black">Check Our Portfolio</h2>
+        <p class="mt-5 leading-7 text-gray-500">
+            Explore selected projects that showcase how we combine strategy,
+            creativity, and technology to create meaningful digital solutions
+            for modern businesses.
+        </p>
+    </div>
+
+    <nav class="mx-auto mt-10">
+        <ul class="flex flex-wrap justify-center gap-3">
+            <li>
+                <button type="button" data-filter="all" class="filter-btn rounded-full bg-black px-5 py-2 text-sm font-medium text-white">
+                    All Work
+                </button>
+            </li>
+
+            <li>
+                <button type="button" data-filter="digital" class="filter-btn rounded-full border border-gray-300 px-5 py-2 text-sm font-medium text-gray-500 transition hover:border-black hover:text-black">
+                    Digital Design
+                </button>
+            </li>
+
+            <li>
+                <button type="button" data-filter="development" class="filter-btn rounded-full border border-gray-300 px-5 py-2 text-sm font-medium text-gray-500 transition hover:border-black hover:text-black">
+                    Development
+                </button>
+            </li>
+
+            <li>
+                <button type="button" data-filter="strategy" class="filter-btn rounded-full border border-gray-300 px-5 py-2 text-sm font-medium text-gray-500 transition hover:border-black hover:text-black">
+                    Strategy
+                </button>
+            </li>
+
+            <li>
+                <button type="button" data-filter="consulting" class="filter-btn rounded-full border border-gray-300 px-5 py-2 text-sm font-medium text-gray-500 transition hover:border-black hover:text-black">
+                    Consulting
+                </button>
+            </li>
+
+        </ul>
+    </nav>
+
+    <div class="mx-auto mt-10 grid max-w-7xl gap-6 sm:mt-16 sm:gap-8 md:grid-cols-2">
+        <div
+            class="portfolio-item overflow-hidden rounded-2xl border border-gray-400 bg-white transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+            data-category="digital">
+            <div class="overflow-hidden">
+                <img src="images/hands.jpg" alt="Enterprise Digital Platform" class="h-72 w-full object-cover transition duration-500 hover:scale-105">
+            </div>
+
+            <div class="p-8">
+                <h3 class="text-sm font-semibold tracking-[0.2em] text-gray-500"> DIGITAL DESIGN</h3>
+                <h2 class="mt-3 text-2xl font-bold text-black">
+                    Enterprise Digital Platform
+                </h2>
+                <p class="mt-4 leading-7 text-gray-500">
+                    A thoughtfully designed digital platform created to
+                    simplify complex business experiences and give users a
+                    clear, intuitive way to interact with the brand.
+                </p>
+                <h4 class="mt-5 text-sm font-semibold text-black"> Enterprise Business</h4>
+                <div class="mt-4 flex flex-wrap gap-2">
+                    <span class="rounded-full bg-gray-100 px-4 py-2 text-xs text-gray-600">UX Design</span>
+
+                    <span class="rounded-full bg-gray-100 px-4 py-2 text-xs text-gray-600">Development</span>
+
+                    <span class="rounded-full bg-gray-100 px-4 py-2 text-xs text-gray-600">Strategy</span>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="portfolio-item overflow-hidden rounded-2xl border border-gray-400 bg-white transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+            data-category="development">
+
+            <div class="overflow-hidden">
+                <img
+                    src="images/Can Sherwin-Williams Color Match Paint from Benjamin Moore_.jpg"
+                    alt="Digital Development Project"
+                    class="h-72 w-full object-cover transition duration-500 hover:scale-105">
+            </div>
+
+            <div class="p-8">
+                <h3 class="text-sm font-semibold tracking-[0.2em] text-gray-500">
+                    DEVELOPMENT
+                </h3>
+
+                <h2 class="mt-3 text-2xl font-bold text-black">
+                    Digital Experience Platform
+                </h2>
+
+                <p class="mt-4 leading-7 text-gray-500">
+                    A responsive digital experience built with a strong focus
+                    on usability, performance, and a seamless journey across
+                    different devices.
+                </p>
+
+                <h4 class="mt-5 text-sm font-semibold text-black">
+                    Technology Business
+                </h4>
+
+                <div class="mt-4 flex flex-wrap gap-2">
+                    <span class="rounded-full bg-gray-100 px-4 py-2 text-xs text-gray-600">
+                        Frontend
+                    </span>
+
+                    <span class="rounded-full bg-gray-100 px-4 py-2 text-xs text-gray-600">
+                        Development
+                    </span>
+
+                    <span class="rounded-full bg-gray-100 px-4 py-2 text-xs text-gray-600">
+                        UX
+                    </span>
+                </div>
+            </div>
+        </div>
+
+
+        <div
+            class="portfolio-item overflow-hidden rounded-2xl border border-gray-400 bg-white transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+            data-category="strategy">
+
+            <div class="overflow-hidden">
+                <img
+                    src="images/cup.jpg"
+                    alt="Creative Strategy Project"
+                    class="h-72 w-full object-cover transition duration-500 hover:scale-105">
+            </div>
+
+            <div class="p-8">
+                <h3 class="text-sm font-semibold tracking-[0.2em] text-gray-500">
+                    STRATEGY
+                </h3>
+
+                <h2 class="mt-3 text-2xl font-bold text-black">
+                    Brand Growth Strategy
+                </h2>
+
+                <p class="mt-4 leading-7 text-gray-500">
+                    A focused strategy developed to strengthen brand
+                    positioning, connect with the right audience, and create
+                    a clearer path for sustainable growth.
+                </p>
+
+                <h4 class="mt-5 text-sm font-semibold text-black">
+                    Growing Brand
+                </h4>
+
+                <div class="mt-4 flex flex-wrap gap-2">
+                    <span class="rounded-full bg-gray-100 px-4 py-2 text-xs text-gray-600">
+                        Strategy
+                    </span>
+
+                    <span class="rounded-full bg-gray-100 px-4 py-2 text-xs text-gray-600">
+                        Branding
+                    </span>
+
+                    <span class="rounded-full bg-gray-100 px-4 py-2 text-xs text-gray-600">
+                        Research
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="portfolio-item overflow-hidden rounded-2xl border border-gray-400 bg-white transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+            data-category="consulting">
+
+            <div class="overflow-hidden">
+                <img
+                    src="images/wood.jpg"
+                    alt="Business Consulting Project"
+                    class="h-72 w-full object-cover transition duration-500 hover:scale-105">
+            </div>
+            <div class="p-8">
+                <h3 class="text-sm font-semibold tracking-[0.2em] text-gray-500">
+                    CONSULTING
+                </h3>
+
+                <h2 class="mt-3 text-2xl font-bold text-black">
+                    Business Transformation
+                </h2>
+
+                <p class="mt-4 leading-7 text-gray-500">
+                    A business-focused approach designed to identify
+                    opportunities, improve existing processes, and create a
+                    stronger foundation for future growth.
+                </p>
+
+                <h4 class="mt-5 text-sm font-semibold text-black">
+                    Enterprise Client
+                </h4>
+
+                <div class="mt-4 flex flex-wrap gap-2">
+                    <span class="rounded-full bg-gray-100 px-4 py-2 text-xs text-gray-600">
+                        Consulting
+                    </span>
+
+                    <span class="rounded-full bg-gray-100 px-4 py-2 text-xs text-gray-600">
+                        Strategy
+                    </span>
+
+                    <span class="rounded-full bg-gray-100 px-4 py-2 text-xs text-gray-600">
+                        Planning
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="portfolio-item overflow-hidden rounded-2xl border border-gray-400 bg-white transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+            data-category="digital">
+
+            <div class="overflow-hidden">
+                <img
+                    src="images/Elegant Mint Green Ceramic Vase with Realistic White Flowers 🌿🤍.jpg"
+                    alt="Brand Design Project"
+                    class="h-72 w-full object-cover transition duration-500 hover:scale-105">
+            </div>
+            <div class="p-8">
+                <h3 class="text-sm font-semibold tracking-[0.2em] text-gray-500">
+                    DIGITAL DESIGN
+                </h3>
+
+                <h2 class="mt-3 text-2xl font-bold text-black">
+                    Modern Brand Experience
+                </h2>
+
+                <p class="mt-4 leading-7 text-gray-500">
+                    A modern visual experience created to give the brand a
+                    stronger identity, communicate its personality, and create
+                    a consistent presence across digital touchpoints.
+                </p>
+
+                <h4 class="mt-5 text-sm font-semibold text-black">
+                    Lifestyle Brand
+                </h4>
+
+                <div class="mt-4 flex flex-wrap gap-2">
+                    <span class="rounded-full bg-gray-100 px-4 py-2 text-xs text-gray-600">
+                        UI Design
+                    </span>
+
+                    <span class="rounded-full bg-gray-100 px-4 py-2 text-xs text-gray-600">
+                        Branding
+                    </span>
+
+                    <span class="rounded-full bg-gray-100 px-4 py-2 text-xs text-gray-600">
+                        UX Design
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="portfolio-item overflow-hidden rounded-2xl border border-gray-400 bg-white transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+            data-category="development">
+
+            <div class="overflow-hidden">
+                <img
+                    src="images/student.jpg"
+                    alt="Web Development Project"
+                    class="h-72 w-full object-cover transition duration-500 hover:scale-105">
+            </div>
+            <div class="p-8">
+                <h3 class="text-sm font-semibold tracking-[0.2em] text-gray-500">
+                    DEVELOPMENT
+                </h3>
+
+                <h2 class="mt-3 text-2xl font-bold text-black">
+                    Interactive Web Platform
+                </h2>
+
+                <p class="mt-4 leading-7 text-gray-500">
+                    An engaging web platform designed to make information
+                    easier to access while giving users a smooth and
+                    straightforward digital experience.
+                </p>
+
+                <h4 class="mt-5 text-sm font-semibold text-black">
+                    Education Platform
+                </h4>
+
+                <div class="mt-4 flex flex-wrap gap-2">
+                    <span class="rounded-full bg-gray-100 px-4 py-2 text-xs text-gray-600">
+                        Development
+                    </span>
+
+                    <span class="rounded-full bg-gray-100 px-4 py-2 text-xs text-gray-600">
+                        JavaScript
+                    </span>
+
+                    <span class="rounded-full bg-gray-100 px-4 py-2 text-xs text-gray-600">
+                        UI
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mx-auto mt-20 max-w-3xl text-center">
+        <h2 class="text-2xl font-bold sm:text-3xl text-black">
+            Ready to elevate your business?
+        </h2>
+
+        <p class="mt-4 leading-7 text-gray-500">
+            Let's discuss how we can transform your digital presence
+            and create a solution that supports your business goals.
+        </p>
+
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+            <a href="#" class="rounded-full bg-black px-7 py-3 text-sm font-medium text-white transition hover:bg-gray-800">
+                Start Conversation
+            </a>
+
+            <a href="#" class="rounded-full border border-gray-300 px-7 py-3 text-sm font-medium text-black transition hover:bg-black hover:text-white">
+                View All Projects
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="team" class="scroll-mt-24 bg-[#F7F5F0] px-5 py-16 sm:px-8 sm:py-20 lg:px-30 lg:py-24">
+    <div class="mx-auto max-w-3xl text-center">
+        <h3 class="text-sm font-semibold tracking-[0.2em] text-black"> TEAM</h3>
+        <div class="mx-auto mt-1 h-[1px] w-10 bg-black"></div>
+        <h2 class="mt-4 text-4xl font-bold text-black"> Meet Our Team</h2>
+        <p class="mt-5 leading-7 text-gray-500">
+            Meet the people behind Axis who bring together strategy,
+            creativity, technology, and a shared commitment to creating
+            meaningful solutions for our clients.
+        </p>
+    </div>
+
+    <div class="mx-auto mt-10 grid max-w-7xl gap-5 sm:mt-16 sm:gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="group overflow-hidden rounded-2xl bg-white text-center transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <img
+                src="images/team 1.jpg"
+                alt="Sarah Johnson"
+                class="h-72 w-full object-cover grayscale transition duration-500 group-hover:grayscale-0 group-hover:scale-105">
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-black">
+                    Sarah Johnson
+                </h3>
+
+                <h5 class="mt-1 text-sm font-medium text-gray-500">
+                    Chief Executive Officer
+                </h5>
+
+                <p class="mt-4 text-sm leading-6 text-gray-500">
+                    Sarah leads Axis with a clear focus on building strong
+                    client relationships, shaping business strategy, and
+                    turning ideas into meaningful opportunities.
+                </p>
+
+                <div class="mt-5 flex justify-center gap-3">
+                    <a href="#" class="flex h-9 w-9 items-center justify-center rounded-full bg-gray-100 text-sm font-semibold text-black transition hover:bg-black hover:text-white">
+                        X
+                    </a>
+
+                    <a
+                        href="#" class="flex h-9 w-9 items-center justify-center rounded-full bg-gray-100 text-sm font-semibold text-black transition hover:bg-black hover:text-white">
+                        in
+                    </a>
+
+                    <a
+                       href="#" class="flex h-9 w-9 items-center justify-center rounded-full bg-gray-100 text-sm font-semibold text-black transition hover:bg-black hover:text-white">
+                        IG
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="group overflow-hidden rounded-2xl bg-white text-center transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <img
+                src="images/team 2.jpg"
+                alt="Daniel Carter"
+                class="h-72 w-full object-cover grayscale transition duration-500 group-hover:grayscale-0 group-hover:scale-105">
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-black">
+                    Daniel Carter
+                </h3>
+
+                <h5 class="mt-1 text-sm font-medium text-gray-500">
+                    Creative Director
+                </h5>
+
+                <p class="mt-4 text-sm leading-6 text-gray-500">
+                    Daniel brings ideas to life through thoughtful design,
+                    helping brands develop visual identities and digital
+                    experiences that connect with their audiences.
+                </p>
+
+                <div class="mt-5 flex justify-center gap-3">
+                    <a href="#" class="flex h-9 w-9 items-center justify-center rounded-full bg-gray-100 text-sm font-semibold text-black transition hover:bg-black hover:text-white">
+                        X
+                    </a>
+
+                    <a href="#" class="flex h-9 w-9 items-center justify-center rounded-full bg-gray-100 text-sm font-semibold text-black transition hover:bg-black hover:text-white">
+                        in
+                    </a>
+
+                    <a href="#" class="flex h-9 w-9 items-center justify-center rounded-full bg-gray-100 text-sm font-semibold text-black transition hover:bg-black hover:text-white">
+                        IG
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="group overflow-hidden rounded-2xl bg-white text-center transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <img
+                src="images/team 3.jpg"
+                alt="Michael Adams"
+                class="h-72 w-full object-cover grayscale transition duration-500 group-hover:grayscale-0 group-hover:scale-105">
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-black">
+                    Michael Adams
+                </h3>
+
+                <h5 class="mt-1 text-sm font-medium text-gray-500">
+                    Head of Development
+                </h5>
+
+                <p class="mt-4 text-sm leading-6 text-gray-500">
+                    Michael oversees the technical side of our projects,
+                    creating reliable and responsive digital solutions that
+                    turn concepts into functional experiences.
+                </p>
+
+                <div class="mt-5 flex justify-center gap-3">
+                    <a href="#" class="flex h-9 w-9 items-center justify-center rounded-full bg-gray-100 text-sm font-semibold text-black transition hover:bg-black hover:text-white">
+                        X
+                    </a>
+
+                    <a href="#" class="flex h-9 w-9 items-center justify-center rounded-full bg-gray-100 text-sm font-semibold text-black transition hover:bg-black hover:text-white">
+                        in
+                    </a>
+
+                    <a href="#" class="flex h-9 w-9 items-center justify-center rounded-full bg-gray-100 text-sm font-semibold text-black transition hover:bg-black hover:text-white">
+                        IG
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="group overflow-hidden rounded-2xl bg-white text-center transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <img
+                src="images/team 4.jpg"
+                alt="Olivia Bennett"
+                class="h-72 w-full object-cover grayscale transition duration-500 group-hover:grayscale-0 group-hover:scale-105">
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-black">
+                    Olivia Bennett
+                </h3>
+                <h5 class="mt-1 text-sm font-medium text-gray-500">
+                    Strategy Consultant
+                </h5>
+                <p class="mt-4 text-sm leading-6 text-gray-500">
+                    Olivia works closely with clients to understand their
+                    challenges, identify opportunities, and develop practical
+                    strategies that support long-term business growth.
+                </p>
+
+                <div class="mt-5 flex justify-center gap-3">
+
+                    <a href="#" class="flex h-9 w-9 items-center justify-center rounded-full bg-gray-100 text-sm font-semibold text-black transition hover:bg-black hover:text-white">
+                        X
+                    </a>
+
+                    <a href="#" class="flex h-9 w-9 items-center justify-center rounded-full bg-gray-100 text-sm font-semibold text-black transition hover:bg-black hover:text-white">
+                        in
+                    </a>
+
+                    <a href="#" class="flex h-9 w-9 items-center justify-center rounded-full bg-gray-100 text-sm font-semibold text-black transition hover:bg-black hover:text-white">
+                        IG
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="scroll-mt-24 bg-white px-5 py-16 sm:px-8 sm:py-20 lg:px-30 lg:py-24">
+    <div class="mx-auto max-w-3xl text-center">
+        <h3 class="text-sm font-semibold tracking-[0.2em] text-black">
+            TESTIMONIALS
+        </h3>
+        <div class="mx-auto mt-1 h-[1px] w-10 bg-black"></div>
+        <h2 class="mt-4 text-4xl font-bold text-black">
+            What They Say
+        </h2>
+        <p class="mt-5 leading-7 text-gray-500">
+            Hear from the people and businesses we have worked with
+            and discover how Axis has helped bring their ideas to life.
+        </p>
+
+    </div>
+    <div class="mx-auto mt-10 max-w-7xl sm:mt-16">
+        <div class="overflow-hidden">
+            <div
+                id="testimonialTrack"
+                class="flex transition-transform duration-500 ease-in-out">
+
+                <div class="w-full shrink-0 px-2 sm:px-3 md:w-1/2 lg:w-1/3">
+                    <div class="rounded-2xl border border-transparent bg-white p-5 shadow-sm transition hover:border-gray-400 sm:p-8">
+                        <img
+                            src="images/por 1.jpg"
+                            alt="Racheak Chan"
+                            class="mx-auto h-20 w-20 rounded-full object-cover border-4 border-gray-300">
+                        <div class="mt-5 text-center text-lg text-yellow-500">
+                            ★★★★★
+                        </div>
+                        <p class="mt-5 text-center leading-7 text-gray-500">
+                            Axis transformed our ideas into a clear and
+                            effective strategy. Their attention to detail
+                            made the entire process smooth.
+                        </p>
+
+                        <h3 class="mt-6 text-center text-lg font-bold text-black">
+                            Racheak Chan
+                        </h3>
+
+                        <p class="mt-1 text-center text-sm text-gray-400">
+                            Project Manager
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w-full shrink-0 px-2 sm:px-3 md:w-1/2 lg:w-1/3">
+                    <div class="rounded-2xl border border-transparent bg-white p-5 shadow-sm transition hover:border-gray-400 sm:p-8">
+                        <img
+                            src="images/pro 2.jpg"
+                            alt="Michael Adams"
+                            class="mx-auto h-20 w-20 rounded-full object-cover border-4 border-gray-300">
+                        <div class="mt-5 text-center text-lg text-yellow-500">
+                            ★★★★★
+                        </div>
+
+                        <p class="mt-5 text-center leading-7 text-gray-500">
+                            Working with Axis was a great experience.
+                            They understood our goals and delivered
+                            beyond our expectations.
+                        </p>
+
+                        <h3 class="mt-6 text-center text-lg font-bold text-black">
+                            Michael Adams
+                        </h3>
+
+                        <p class="mt-1 text-center text-sm text-gray-400">
+                            Business Consultant
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w-full shrink-0 px-2 sm:px-3 md:w-1/2 lg:w-1/3">
+                    <div class="rounded-2xl border border-transparent bg-white p-5 shadow-sm transition hover:border-gray-400 sm:p-8">
+                        <img
+                            src="images/pro 3.jpg"
+                            alt="Sarah Williams"
+                            class="mx-auto h-20 w-20 rounded-full object-cover border-4 border-gray-300">
+
+                        <div class="mt-5 text-center text-lg text-yellow-500">
+                            ★★★★★
+                        </div>
+                        <p class="mt-5 text-center leading-7 text-gray-500">
+                            From the first conversation to the final
+                            delivery, the team was professional,
+                            creative and easy to work with.
+                        </p>
+
+                        <h3 class="mt-6 text-center text-lg font-bold text-black">
+                            Sarah Williams
+                        </h3>
+
+                        <p class="mt-1 text-center text-sm text-gray-400">
+                            Creative Director
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w-full shrink-0 px-2 sm:px-3 md:w-1/2 lg:w-1/3">
+                    <div class="rounded-2xl border border-transparent bg-white p-5 shadow-sm transition hover:border-gray-400 sm:p-8">
+                        <img
+                            src="images/pro 4.jpg"
+                            alt="David Johnson"
+                            class="mx-auto h-20 w-20 rounded-full object-cover border-4 border-gray-300">
+
+                        <div class="mt-5 text-center text-lg text-yellow-500">
+                            ★★★★★
+                        </div>
+
+                        <p class="mt-5 text-center leading-7 text-gray-500">
+                            Axis helped us create a stronger digital
+                            presence and gave our business a much clearer
+                            direction.
+                        </p>
+
+                        <h3 class="mt-6 text-center text-lg font-bold text-black">
+                            David Johnson
+                        </h3>
+
+                        <p class="mt-1 text-center text-sm text-gray-400">
+                            Founder
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w-full shrink-0 px-2 sm:px-3 md:w-1/2 lg:w-1/3">
+                    <div class="rounded-2xl border border-transparent bg-white p-5 shadow-sm transition hover:border-gray-400 sm:p-8">
+                        <img
+                            src="images/pro 5.jpg"
+                            alt="Emily Carter"
+                            class="mx-auto h-20 w-20 rounded-full object-cover border-4 border-gray-300">
+
+                        <div class="mt-5 text-center text-lg text-yellow-500">
+                            ★★★★★
+                        </div>
+
+                        <p class="mt-5 text-center leading-7 text-gray-500">
+                            The Axis team brought fresh ideas, strong
+                            communication and excellent execution to our
+                            project.
+                        </p>
+
+                        <h3 class="mt-6 text-center text-lg font-bold text-black">
+                            Emily Carter
+                        </h3>
+
+                        <p class="mt-1 text-center text-sm text-gray-400">
+                            Marketing Manager
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-8 flex flex-col items-center gap-4">
+            <div class="flex items-center gap-3">
+                <button
+                    id="prevBtn"
+                    type="button"
+                    class="flex h-10 w-10 items-center justify-center rounded-full bg-black text-white transition hover:bg-gray-800">
+                    ←
+                </button>
+
+                <button
+                    id="nextBtn"
+                    type="button"
+                    class="flex h-10 w-10 items-center justify-center rounded-full bg-black text-white transition hover:bg-gray-800">
+                    →
+                </button>
+            </div>
+
+            <div id="sliderDots" class="flex gap-2">
+                <button class="h-2 w-2 rounded-full bg-black"></button>
+
+                <button class="h-2 w-2 rounded-full bg-gray-300"></button>
+
+                <button class="h-2 w-2 rounded-full bg-gray-300"></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="contact" class="scroll-mt-24 bg-[#F7F5F0] px-5 py-16 sm:px-8 sm:py-20 lg:px-30 lg:py-24">
+    <div class="mx-auto max-w-3xl text-center">
+        <h3 class="text-sm font-semibold tracking-[0.2em] text-black">
+            CONTACT
+        </h3>
+        <div class="mx-auto mt-1 h-[1px] w-10 bg-black"></div>
+        <h2 class="mt-4 text-4xl font-bold text-black">
+            Let's Connect
+        </h2>
+        <p class="mt-5 leading-7 text-gray-500">
+            Have a project, idea, or business challenge in mind? We'd love
+            to hear from you and explore how Axis can help turn your vision
+            into a meaningful digital solution.
+        </p>
+    </div>
+
+    <div class="mx-auto mt-16 grid max-w-7xl gap-8 lg:grid-cols-2">
+        <div>
+            <h2 class="text-2xl font-bold sm:text-3xl text-black">
+                Let's Work Together
+            </h2>
+            <p class="mt-4 max-w-lg leading-7 text-gray-500">
+                Whether you're looking to build a new digital experience,
+                strengthen your brand, or find a better way to connect with
+                your audience, we're ready to discuss your goals and explore
+                what's possible.
+            </p>
+
+            <div class="mt-10 space-y-8">
+                <div>
+                    <h3 class="text-sm font-semibold tracking-wider text-black">
+                        EMAIL US
+                    </h3>
+
+                    <p class="mt-2 text-gray-500">
+                        hello@axis.com
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-sm font-semibold tracking-wider text-black">
+                        CALL US
+                    </h3>
+
+                    <p class="mt-2 text-gray-500">
+                        +1 (555) 246-8900
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-sm font-semibold tracking-wider text-black">
+                        VISIT US
+                    </h3>
+
+                    <p class="mt-2 leading-7 text-gray-500">
+                        120 Business Avenue<br>
+                        New York, NY 10022
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="min-w-0 rounded-2xl bg-white p-5 shadow-sm sm:p-8">
+
+            <h2 class="text-2xl font-bold text-black">
+                Send us a message
+            </h2>
+
+
+            <form action="" class="mt-8">
+                <div class="flex flex-col gap-5 sm:flex-row sm:gap-6">
+                    <div>
+                        <label class="text-sm font-medium text-black">
+                            Full Name
+                        </label>
+                        <input
+                            type="text"
+                            class="mt-2 block w-full min-w-0 rounded-lg border border-gray-200 px-4 py-3 outline-none transition focus:border-black">
+                    </div>
+
+                    <div>
+                        <label class="text-sm font-medium text-black">
+                            Email Address
+                        </label>
+                        <input
+                            type="email"
+                            class="mt-2 block w-full min-w-0 rounded-lg border border-gray-200 px-4 py-3 outline-none transition focus:border-black">
+                    </div>
+                </div>
+
+                <div class="mt-5">
+                    <label class="text-sm font-medium text-black">
+                        Subject
+                    </label>
+                    <input
+                        type="text"
+                        class="mt-2 block w-full min-w-0 rounded-lg border border-gray-200 px-4 py-3 outline-none transition focus:border-black">
+                </div>
+                <div class="mt-5">
+                    <label class="text-sm font-medium text-black">
+                        Message
+                    </label>
+                    <textarea
+                        rows="5"
+                        class="mt-2 w-full resize-none rounded-lg border border-gray-200 px-4 py-3 outline-none transition focus:border-black"> </textarea>
+                </div>
+
+                <button
+                    type="submit"
+                    class="mt-6 rounded-full bg-black px-7 py-3 text-sm font-medium text-white transition hover:bg-gray-800" >
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+    </main>
+
+   <footer class="bg-black px-5 py-14 text-white sm:px-8 sm:py-16 lg:px-10">
+    <div class="mx-auto grid max-w-7xl gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-12">
+        <div>
+            <h2 class="text-2xl font-bold">Axis</h2>
+            <p class="mt-5 leading-7 text-gray-400">
+                We help businesses turn ideas into meaningful digital
+                experiences through strategy, creative design, and reliable
+                technology built around their goals.
+            </p>
+
+            <div class="mt-6 flex gap-3">
+               <a  href="#"class="flex h-9 w-9 items-center justify-center rounded-full bg-gray-100 text-sm font-semibold text-black transition hover:bg-black hover:text-white"> F</a>
+               <a href="#"class="flex h-9 w-9 items-center justify-center rounded-full bg-gray-100 text-sm font-semibold text-black transition hover:bg-black hover:text-white"> X</a>
+               <a href="#"class="flex h-9 w-9 items-center justify-center rounded-full bg-gray-100 text-sm font-semibold text-black transition hover:bg-black hover:text-white">in</a>
+               <a href="#"class="flex h-9 w-9 items-center justify-center rounded-full bg-gray-100 text-sm font-semibold text-black transition hover:bg-black hover:text-white">IG</a>
+            </div>
+        </div>
+
+        <div>
+            <h2 class="text-lg font-bold">Useful Links</h2>
+            <ul class="mt-5 space-y-3">
+                <li><a href="#home" class="text-gray-400 hover:text-white">Home</a></li>
+
+                <li><a href="#about" class="text-gray-400 hover:text-white">About Us</a></li>
+
+                <li><a href="#services" class="text-gray-400 hover:text-white">Services</a></li>
+
+                <li><a href="#portfolio" class="text-gray-400 hover:text-white"> Portfolio</a></li>
+
+                <li><a href="#contact" class="text-gray-400 hover:text-white">Contact</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h2 class="text-lg font-bold">
+                Our Services
+            </h2>
+            <ul class="mt-5 space-y-3">
+                <li><a href="#" class="text-gray-400 hover:text-white">Strategic Consulting</a></li>
+
+                <li><a href="#" class="text-gray-400 hover:text-white">Creative Design</a></li>
+
+                <li><a href="#" class="text-gray-400 hover:text-white"> Web Development</a></li>
+
+                <li><a href="#" class="text-gray-400 hover:text-white">Digital Marketing </a></li>
+
+                <li><a href="#" class="text-gray-400 hover:text-white">Business Analytics</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h2 class="text-lg font-bold">Contact Us</h2>
+
+            <p class="mt-5 leading-7 text-gray-400">120 Business Avenue<br>New York, NY 10022<br> United States </p>
+
+            <p class="mt-4 text-gray-400"><span class="text-white">Phone:</span>+1 (555) 246-8900</p>
+
+            <p class="mt-2 text-gray-400"><span class="text-white">Email:</span>hello@axis.com </p>
+        </div>
+    </div>
+    <div class="mx-auto mt-12 max-w-7xl border-t border-gray-800 pt-6 text-center">
+        <p class="text-sm text-gray-500"> &copy; Copyright Axis All Rights Reserved</p>
+    </div>
+</footer>
+<script src="axis.js"></script>
+  </body>
+</html>
